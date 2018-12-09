@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+ 	<head>
     <title>Uniformity Labs: Advancing Additive Manufacturing</title>
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -13,11 +13,11 @@
     
     <!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     
 <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,300%7COpen+Sans:400,300,700" rel="stylesheet" type="text/css">  
@@ -47,41 +47,6 @@
     .cd-search-trigger {margin-top:10px !important;}
     .cd-search-trigger {margin-top:10px !important;}
     .logo-container-2 {width:500px !important;}
-    .col-xs-5ths,
-    .col-sm-5ths,
-    .col-md-5ths,
-    .col-lg-5ths {
-        position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .col-xs-5ths {
-        width: 20%;
-        float: left;
-    }
-
-    @media (min-width: 768px) {
-        .col-sm-5ths {
-            width: 20%;
-            float: left;
-        }
-    }
-
-    @media (min-width: 992px) {
-        .col-md-5ths {
-            width: 20%;
-            float: left;
-        }
-    }
-
-    @media (min-width: 1200px) {
-        .col-lg-5ths {
-            width: 20%;
-            float: left;
-        }
-    }
   </style>
   </head>
 	<body>
@@ -122,7 +87,7 @@
 				<![endif]-->
 				
 				<!-- HEADER 1 FONT BLACK TRANSPARENT -->
-				<header id="nav" class="header header-1">
+				<header id="nav" class="header header-1 bg-gray">
 				  <div class="header-wrapper">
 					<div class="container-m-30 clearfix">
 					  <div class="logo-row">
@@ -131,7 +96,7 @@
 						<div class="logo-container-2">
                 <div class="logo-2">
                   <a href="index.html" class="clearfix">
-                    <img src="images/logo-white.png" class="logo-img" alt="Logo">
+                    <img src="images/logo.png" class="logo-img" alt="Logo">
                   </a>
                 </div>
               </div>
@@ -157,13 +122,13 @@
                         <li class="parent">
                           <a href="products.html" class="main-menu-title"><div class="main-menu-title">Products</div></a>
                         </li>           
-                        <li class="parent current">
+                        <li class="parent">
                           <a href="about.html"><div class="main-menu-title">About Us</div></a>
                         </li>    
                         <li class="parent">
                           <a href="investors.html"><div class="main-menu-title">Investors</div></a>
                         </li>                              
-                        <li id="menu-contact-info-big" class="parent megamenu">
+                        <li id="menu-contact-info-big" class="parent megamenu current">
                           <a href="contact.html"><div class="main-menu-title">Contact</div></a>
                           <ul class="sub">
                             <li class="clearfix" >
@@ -225,122 +190,131 @@
 					
 				  </div>
 				  <!-- END header-wrapper -->
-				  
 				</header>
        
         <!-- PAGE TITLE LARGE 2 GRAY -->
-        <div class="page-title-cont page-title-large2-cont" style="background-image: url(images/about2.jpg); background-repeat: no-repeat; background-size: cover; width: 100%; height: 300px">
-          <div class="relative container align-left" style="margin-top: -80px;">
+        <div class="page-title-cont page-title-large2-cont bg-gray">
+          <div class="relative container align-left">
             <div class="row">
               
               <div class="col-md-8">
-                <h1 class="page-title2">About Us</h1>
+                <h1 class="page-title2">Contact</h1>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- FEATURES 5 ABOUT US -->
-        <div id="about" class="page-section pt-160-b-120-cont bg-gray1" style="background-color: white">
-					<div class="container">
-
-            <div class="row">
-              <!-- TEXT -->
-              <div class="col-md-5 pb-40">
-                <div class="font-poppins font-32 font-black bold text-right1 mb-0">
-                  <p style="font-size: 28px">Uniformity Labs’ breakthrough technology helps unlock the full potential of AM</p>
-                 </div>
-							</div>
+        
+          <!-- GOOGLE MAP & CONTACT FORM -->
+          <div class="page-section">
+            <div class="container-fluid">
+              <div class="row">
               
-              <!-- FEATURES -->
-							<div class="col-md-offset-1 col-md-6 ">
+                <div class="col-md-6">
+                  <div class="row row-sm-fix">
+                    <div data-address="555 California Street, San Francisco, CA" class="contact-form-with-catcha" id="google-map"></div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="contact-form-cont">
+                    <!-- TITLE -->
+                    <div class="mb-40">
+                      <h3 >Leave a Message</h3>
+                    </div>
+                                  
+                    <!-- CONTACT FORM -->
+                    <div class="relative" >
+                      <form id="contact-form" action="php/contact-form-recaptcha.php" method="POST">
+                      
+                        <div class="row">
+                          <div class="col-md-12 mb-30">
+                            <!-- <label>Your name *</label> -->
+                            <input type="text" value="" data-msg-required="Please enter your name" maxlength="100" class="form-control" name="name" id="name" placeholder="Name" required>
+                          </div>
+                        </div>
+                        
+                        <div class="row">    
+                          <div class="col-md-12 mb-30">
+                          
+                            <input type="email" value="" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address" maxlength="100" class="form-control" name="email" id="email" placeholder="Email" required>
+                            </div>
+                        </div>
                     
-                <div class="row">
+                        <div class="row">
+                          <div class="col-md-12 mb-40">
+                           
+                            <textarea maxlength="5000" data-msg-required="Please enter your message" rows="3" class="form-control" name="message" id="message" placeholder="Message" required></textarea>
+                          </div>
+                        </div>
+                        
+                        <!-- GOOGLE RECAPTHA  -->
+                        <div class="g-recaptcha" data-sitekey="PUT YOUR SITE KEY HERE"></div>
+                        
+                        <div class="row">
+                          <div class="col-md-12 mt-50">
+                            <input type="submit" name="enter" value="SEND MESSAGE" class="button medium rounded gray font-open-sans" data-loading-text="Loading...">
+                          </div>
+                        </div>
+                        
+                      </form>	
+                      <div class="alert alert-success hidden animated pulse" id="contactSuccess">
+                        Thanks, your message has been sent to us
+                      </div>
                     
-                  <div class="col-md-12 col-sm-12 pb-10">
-                    <div class="fes5-box wow fadeIn" >
-                      <p>Founded in 2014 and based in Fremont, California, Uniformity Labs (UL) develops breakthrough material and software solutions that aim to accelerate and expand global commercial and industrial 3D printing (“Additive Manufacturing”, “AM”) markets. The company’s patent-pending technology enables significant cost savings, speed & quality improvements across all mainstream AM printers.</p>
+                      <div class="alert alert-danger hidden animated shake" id="contactError">
+                        <strong>Error!</strong> There was an error sending your message. Maybe you forgot to solve the CAPTCHA
+                      </div>
                     </div>
                   </div>
-                </div>               
-							</div>
-						</div>
-					</div>
-				</div>
-   
-				<!-- ABOUT US 1 -->
-				<div class="page-section bg-gray" style="padding-top: 100px; padding-bottom: 50px;">
-					<div class="container">
-            <div class="row">  
-              <div class="member col-md-5ths col-sm-5ths wow fadeInUp">
-                <div class="member-image">
-                  <img class="img-circle" src="images/team/adam.jpg" alt="img" height="332" width="332">
                 </div>
-                <h3>Adam Hopkins</h3>
-                <span>CEO</span>
-                <ul class="team-social">
-                  <li><a href="#"><span aria-hidden="true" class="social_facebook"></span></a></li>
-                  <li><a href="#"><span aria-hidden="true" class="social_twitter"></span></a></li>
-                  <li><a href="#"><span aria-hidden="true" class="social_dribbble"></span></a></li>
-                </ul>
+                  
               </div>
-              
-              <div class="member col-md-5ths col-sm-5ths wow fadeInUp" data-wow-delay="200ms">
-                <div class="member-image">
-                  <img class="img-circle" src="images/team/salvadore.png" alt="img" height="332" width="332">
+            </div>
+          </div>
+        
+        <!-- CONTACT INFO SECTION 1  -->
+        <div id="contact-link" class="page-section p-100-cont bg-gray">
+          <div class="container">
+            <div class="row">
+            
+              <div class="col-md-4 col-sm-6">
+                <div class="cis-cont">
+                  <div class="cis-icon">
+                    <div class="icon icon-basic-map"></div>
+                  </div>
+                  <div class="cis-text">
+                    <h3>Address</h3>
+                    <p>741400 Christy Street, Fremont CA 94538</p>
+                  </div>
                 </div>
-                <h3>Savatore Torquato</h3>
-                <span>Core Technology</span>
-                <ul class="team-social">
-                  <li><a href="#"><span aria-hidden="true" class="social_facebook"></span></a></li>
-                  <li><a href="#"><span aria-hidden="true" class="social_twitter"></span></a></li>
-                  <li><a href="#"><span aria-hidden="true" class="social_dribbble"></span></a></li>
-                </ul>
               </div>
-              
-              <div class="member col-md-5ths col-sm-5ths wow fadeInUp" data-wow-delay="400ms">
-                <div class="member-image">
-                  <img class="img-circle" src="images/team/team-28.jpg" alt="img" height="332" width="332">
+              <div class="col-md-4 col-sm-6">
+                <div class="cis-cont">
+                  <div class="cis-icon">
+                    <div class="icon icon-basic-mail"></div>
+                  </div>
+                  <div class="cis-text">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@elementy.com">info@uniformitylabs.com</a></p>
+                  </div>
                 </div>
-                <h3>Lalit Merani</h3>
-                <span>COO</span>
-                <ul class="team-social">
-                  <li><a href="#"><span aria-hidden="true" class="social_facebook"></span></a></li>
-                  <li><a href="#"><span aria-hidden="true" class="social_twitter"></span></a></li>
-                  <li><a href="#"><span aria-hidden="true" class="social_dribbble"></span></a></li>
-                </ul>
               </div>
-
-              <div class="member col-md-5ths col-sm-5ths wow fadeInUp" data-wow-delay="400ms">
-                <div class="member-image">
-                  <img class="img-circle" src="images/team/arun.jpg" alt="img" height="332" width="332">
+              <div class="col-md-4 col-sm-6">
+                <div class="cis-cont">
+                  <div class="cis-icon">
+                    <div class="icon icon-basic-smartphone"></div>
+                  </div>
+                  <div class="cis-text">
+                    <h3>Call Us</h3>
+                    <p>650-835-7732</p>
+                  </div>
                 </div>
-                <h3>Arun Chattopadhya</h3>
-                <span>VP Production</span>
-                <ul class="team-social">
-                  <li><a href="#"><span aria-hidden="true" class="social_facebook"></span></a></li>
-                  <li><a href="#"><span aria-hidden="true" class="social_twitter"></span></a></li>
-                  <li><a href="#"><span aria-hidden="true" class="social_dribbble"></span></a></li>
-                </ul>
-              </div>
-
-              <div class="member col-md-5ths col-sm-5ths wow fadeInUp" data-wow-delay="400ms">
-                <div class="member-image">
-                  <img class="img-circle" src="images/team/vlad.jpg" alt="img" height="332" width="332">
-                </div>
-                <h3>Vladimir Duz</h3>
-                <span>Director, Process Engineering</span>
-                <ul class="team-social">
-                  <li><a href="#"><span aria-hidden="true" class="social_facebook"></span></a></li>
-                  <li><a href="#"><span aria-hidden="true" class="social_twitter"></span></a></li>
-                  <li><a href="#"><span aria-hidden="true" class="social_dribbble"></span></a></li>
-                </ul>
               </div>
               
             </div>
-					</div>
-        </div>
-       
+          </div>        
+        </div> 
+
         <!-- FOOTER 3 FONT MONTSERRAT -->
         <footer id="footer2" class="page-section pt-95 pb-50 footer2-black">
           <div class="container">
@@ -418,13 +392,20 @@
     
     <!-- APPEAR -->    
     <script  src="js/jquery.appear.js"></script>
-        
-    <!-- COUNTER -->
-    <script  src="js/jquery.countTo.js"></script>
     
+    <!-- GOOLE MAP 
+    !!! To setup Google Maps, please, see the documentation !!! --> 
+    <script  src="https://maps.google.com/maps/api/js?key=INSERT-YOUR-API-KEY-HERE"></script>
+    <script  src="js/gmap3.min.js"></script>
+    
+    <!--[if lt IE 10]><script  src="js/jquery.placeholder.js"></script><![endif]--> 
+    
+    <!-- FORMS VALIDATION	-->
+		<script src="js/jquery.validate.min.js"></script>
+
     <!-- MAIN SCRIPT -->
 		<script src="js/main.js"></script>
-
+    
 <!-- JS end -->	
 	
 	</body>
