@@ -44,8 +44,6 @@
     .fes1-cont {padding-top:60px !important;}
     .pb-0 {padding-bottom:60px !important;}
     .nav.navbar-nav {margin-top:10px !important;}
-    .cd-search-trigger {margin-top:10px !important;}
-    .cd-search-trigger {margin-top:10px !important;}
     .logo-container-2 {width:500px !important;}
     .col-xs-5ths,
     .col-sm-5ths,
@@ -123,7 +121,8 @@
 				<![endif]-->
 				
 				<!-- HEADER 1 FONT BLACK TRANSPARENT -->
-				<header id="nav" class="header header-1">
+				<div class="header-black-bg"></div> <!-- NEED FOR TRANSPARENT HEADER ON MOBILE -->
+        <header id="nav" class="header header-1 header-black">
 				  <div class="header-wrapper">
 					<div class="container-m-30 clearfix">
 					  <div class="logo-row">
@@ -218,18 +217,6 @@
               </div>
               <!-- END container-m-30 -->
           </div>
-          <!-- END main-menu-container -->
-					
-					<!-- SEARCH READ DOCUMENTATION -->
-					<ul class="cd-header-buttons">
-						<li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>
-					</ul> <!-- cd-header-buttons -->
-					<div id="cd-search" class="cd-search">
-						<form class="form-search" id="searchForm" action="page-search-results.html" method="get">
-							<input type="text" value="" name="q" id="q" placeholder="Search...">
-						</form>
-					</div>
-					
 				  </div>
 				  <!-- END header-wrapper -->
 				  
@@ -379,7 +366,7 @@
                   </address>
                 </div>
                 <div class="footer2-text-cont">
-                  1-800-312-2121<br>
+                  1-650-835-7732<br>
                   <a class="a-text" href="mailto:info@uniformity.com">info@uniformitylabs.com</a><br/>
                   <a>&copy; Uniformity Labs</a>
                 </div>
